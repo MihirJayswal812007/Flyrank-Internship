@@ -7803,10 +7803,6 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Capstone-%E2%80%94-mirrors-your-deployed-research-paper">Capstone — mirrors your deployed research paper<a class="anchor-link" href="#Capstone-%E2%80%94-mirrors-your-deployed-research-paper">¶</a></h1><p><a href="https://colab.research.google.com/github/MihirJayswal812007/Flyrank-Internship/blob/main/work/notebooks/capstone.ipynb?flush_cache=true"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
-<p>This skeleton is yours to fill. Work the sections <strong>in order</strong> — each one has a one-line hint. Simple words, honest numbers.</p>
-<blockquote>
-<p>Working with an AI assistant? Tell it to read <code>skills/README.md</code> first and load the one skill this assignment names on its card.</p>
-</blockquote>
 </div>
 </div>
 </div>
@@ -7823,20 +7819,6 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c3sTLCeUl5dA">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=O5BpULuSl5dB">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7846,20 +7828,6 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="2.-Data">2. Data<a class="anchor-link" href="#2.-Data">¶</a></h2><p>Data Used: This research utilizes a mid-panel month (month = 2026-03) from the FlyRank internship-warehouse dataset, ensuring future months remain a sealed test set. The unit of analysis is a single anonymized webpage's performance over that month.</p>
 <p>Exclusions: We deliberately excluded pages with 0 impressions (impressions_90d &gt; 0). If a page is entirely invisible in search, it is an SEO ranking issue, not a layout engagement issue.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=OF1RmjTkl5dB">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7873,20 +7841,6 @@ a.anchor-link {
 <h2 id="3.-Methodology">3. Methodology<a class="anchor-link" href="#3.-Methodology">¶</a></h2><p>Methodology: We framed this as a binary classification task. Our proxy label for "needs redesign" was defined as pages ranking in page_1 or top_3 with a CTR strictly below 5% (0.05).</p>
 <p>Features &amp; Leakage: Our features included content_type, word_count, content_age_days, days_since_last_update, and position_tier. We performed a leakage audit to ensure ctr and impressions_90d were excluded from training, as including them would be direct target leakage.</p>
 <p>Validation Design: The model (a Decision Tree Classifier with max_depth=4) was tested using a time-aware split (training on the oldest 80% of content, validating on the newest 20%). This honest split prevents the model from cheating via random-split memorization.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=rma2eIusl5dC">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7909,20 +7863,6 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=OgHU0MRyl5dC">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=DZ8eF1Xll5dD">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7931,20 +7871,6 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="5.-Limitations">5. Limitations<a class="anchor-link" href="#5.-Limitations">¶</a></h2><p>Limitations &amp; Honest Framing: This tool provides directional decision-support and must not replace human review. The data proves a user didn't click, but it cannot tell us why. Critically, the model cannot account for "zero-click" searches—queries where users get their answer directly from the Google search snippet and intentionally do not click, meaning the page layout itself is not at fault.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7AJd5wjLl5dD">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7958,20 +7884,6 @@ a.anchor-link {
 <h2 id="6.-Ranked-recommendations">6. Ranked recommendations<a class="anchor-link" href="#6.-Ranked-recommendations">¶</a></h2><p>Action Playbook: The model outputs a prioritized queue of URLs flagged for a send_to_ux_design action, sorted descending by impressions_90d to maximize impact. A UX researcher must manually review these flagged URLs to confirm the layout is outdated before assigning engineering hours.</p>
 <p>Reproducibility: The complete codebase, SQL queries, and validation splits are publicly available in my GitHub repository: <a href="https://github.com/MihirJayswal812007/Flyrank-Internship">https://github.com/MihirJayswal812007/Flyrank-Internship</a></p>
 <p>Acknowledgments: Built on the FlyRank ML Internship dataset. Visit <a href="https://flyrank.ai">https://flyrank.ai</a> for more details.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=m3TF-m5Yl5dD">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -8194,6 +8106,132 @@ Top 5 Pages Flagged for UX Redesign Queue:
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5nqMmJrOrPPm">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="8.-Demo-Outline-&amp;-Shareable-Cuts-(ML-12)">8. Demo Outline &amp; Shareable Cuts (ML-12)<a class="anchor-link" href="#8.-Demo-Outline-&amp;-Shareable-Cuts-(ML-12)">¶</a></h2><p>5-Minute Demo Outline
+The Question: Is a high-ranking page failing because of SEO, or because of poor UI/UX design that bleeds clicks?</p>
+<p>The Method: We built a Decision Tree classifier using a strict time-aware split (training on older pages, testing on newer ones) to prevent data leakage and simulate real-world forecasting.</p>
+<p>The Chart: A log-scale histogram comparing the CTR distribution of healthy pages against our highly targeted "red flag" cluster.</p>
+<p>One Honest Result: The ML model (Precision: 0.725) outperformed our rigid baseline rule (0.691). However, we must acknowledge it cannot account for "zero-click" search intent.</p>
+<p>One Recommendation: The UX team should work top-down through the model's prioritized queue (sorted by lost impressions), manually verifying the layout before assigning engineering hours.</p>
+<p>Short Social Post (LinkedIn/Twitter)
+Just wrapped up my Capstone for the FlyRank ML Internship! 🚀 I built a machine learning decision-support tool that audits content engagement, helping UX teams identify web pages that rank highly but bleed clicks. Instead of standard random train/test splits, I implemented a strict time-aware validation split (training on historical content, testing on new content) to ensure the model's precision holds up in the real world. You can read the full paper and methodology here: <a href="https://mihirjayswal812007.github.io/Flyrank-Internship/">https://mihirjayswal812007.github.io/Flyrank-Internship/</a> #MachineLearning #DataScience #FlyRank #UXDesign</p>
+<p>3-Sentence Employer-Facing Summary (For your CV/Resume)
+I developed a Decision Tree classification model to identify underperforming content formats by analyzing Google Search engagement metrics. By implementing a strict time-aware validation split on production data, I ensured the model generalized well to new content, outperforming baseline heuristics. The final deliverable was an automated, prioritized queue that directs UX engineering resources to the most impactful page redesigns.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aAqTcl7roIYA">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># 1. Fetch your saved notebook directly from your GitHub</span>
+<span class="err">!</span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="n">capstone</span><span class="o">.</span><span class="n">ipynb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">MihirJayswal812007</span><span class="o">/</span><span class="n">Flyrank</span><span class="o">-</span><span class="n">Internship</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">notebooks</span><span class="o">/</span><span class="n">capstone</span><span class="o">.</span><span class="n">ipynb</span>
+
+<span class="c1"># 2. Convert it to HTML</span>
+<span class="err">!</span><span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="n">capstone</span><span class="o">.</span><span class="n">ipynb</span>
+
+<span class="c1"># 3. Trigger the download to your computer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">files</span>
+<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'capstone.html'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>--2026-09-06 17:08:56--  https://raw.githubusercontent.com/MihirJayswal812007/Flyrank-Internship/main/work/notebooks/capstone.ipynb
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60176 (59K) [text/plain]
+Saving to: ‘capstone.ipynb’
+
+capstone.ipynb        0%[                    ]       0  --.-KB/s               capstone.ipynb      100%[===================&gt;]  58.77K  --.-KB/s    in 0.02s   
+
+2026-09-06 17:08:56 (2.51 MB/s) - ‘capstone.ipynb’ saved [60176/60176]
+
+[NbConvertApp] Converting notebook capstone.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 1 image(s).
+[NbConvertApp] Writing 343158 bytes to capstone.html
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="9dbbf15b-1815-45d9-9793-b24850a50e2d" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('9dbbf15b-1815-45d9-9793-b24850a50e2d');
+
+    async function download(id, filename, size) {
+      if (!google.colab.kernel.accessAllowed) {
+        return;
+      }
+      const div = document.createElement('div');
+      const label = document.createElement('label');
+      label.textContent = `Downloading "${filename}": `;
+      div.appendChild(label);
+      const progress = document.createElement('progress');
+      progress.max = size;
+      div.appendChild(progress);
+      document.body.appendChild(div);
+
+      const buffers = [];
+      let downloaded = 0;
+
+      const channel = await google.colab.kernel.comms.open(id);
+      // Send a message to notify the kernel that we're ready.
+      channel.send({})
+
+      for await (const message of channel.messages) {
+        // Send a message to notify the kernel that we're ready.
+        channel.send({})
+        if (message.buffers) {
+          for (const buffer of message.buffers) {
+            buffers.push(buffer);
+            downloaded += buffer.byteLength;
+            progress.value = downloaded;
+          }
+        }
+      }
+      const blob = new Blob(buffers, {type: 'application/binary'});
+      const a = document.createElement('a');
+      a.href = window.URL.createObjectURL(blob);
+      a.download = filename;
+      div.appendChild(a);
+      a.click();
+      div.remove();
+    }
+  
+</script>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="cae9eb8e-640c-4cd5-9794-64c915999df0" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('cae9eb8e-640c-4cd5-9794-64c915999df0');
+download("download_f20723dd-37aa-433a-beda-8861644ed12f", "capstone.html", 343196)
+</script>
 </div>
 </div>
 </div>
